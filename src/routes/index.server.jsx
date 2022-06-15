@@ -50,12 +50,7 @@ export default function Index() {
         console.warn(`this is a batch warn message`)
         console.error(`this is a batch error message`)
         // throw new Error('this error was thrown in handleRequest after logging')
-    }
 
-  return new Response(responseBody, {
-    headers: { 'content-type': 'text/plain' },
-  })
-}
   return (
     <Layout hero={<GradientBackground />}>
       <Suspense fallback={null}>
