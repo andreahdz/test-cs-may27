@@ -17,7 +17,7 @@ import {Suspense} from 'react';
 
 export default function Index() {
   const {countryCode = 'US'} = useSession();
-        throw new Error('this error was thrown in handleRequest after logging')
+        const x = undefined.y+2;
 
   return (
     <Layout hero={<GradientBackground />}>
