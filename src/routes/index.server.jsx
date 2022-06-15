@@ -18,7 +18,7 @@ import {Suspense} from 'react';
 export default function Index() {
   const {countryCode = 'US'} = useSession();
     for (var i =0; i<6000; i++) {
-      console.log(log, i);
+      console.log("log", i);
     }
 
   return (
