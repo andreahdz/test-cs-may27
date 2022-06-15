@@ -17,7 +17,45 @@ import {Suspense} from 'react';
 
 export default function Index() {
   const {countryCode = 'US'} = useSession();
-  console.log('hello world!');
+        console.assert(false, `this is a false assert message`)
+        console.assert(true, `this is a true assert message`)
+        console.count(String(['count label', 'count label 2']))
+        console.count(String(['count label', 'count label 2']))
+        console.countReset(String(['count label']))
+        console.count(String(['count label', 'count label 2']))
+        console.debug({ field: `message in an object` })
+        console.dir({ nested: { field: `nested in an object` } })
+        console.dirxml({ nested: { field: `nested in an object dirxml` } })
+        console.error(`this is an error message`)
+        console.log('This is the outer level')
+        console.group()
+        console.log('Level 2')
+        console.group()
+        console.log('Level 3')
+        console.warn('More of level 3')
+        console.groupEnd()
+        console.log('Back to level 2')
+        console.groupEnd()
+        console.log('Back to the outer level')
+        console.info(`this is an info message`)
+        console.log(`this is a log message`)
+        console.log(`this is a ping message`)
+        console.table(['this', 'is a', 'table'])
+        console.time('time label')
+        console.timeLog('time label')
+        console.timeEnd('time label')
+        console.trace()
+        console.warn(`this is a warn message`)
+        // throw new Error('this error was thrown in handleRequest')
+        console.warn(`this is a batch warn message`)
+        console.error(`this is a batch error message`)
+        // throw new Error('this error was thrown in handleRequest after logging')
+    }
+
+  return new Response(responseBody, {
+    headers: { 'content-type': 'text/plain' },
+  })
+}
   return (
     <Layout hero={<GradientBackground />}>
       <Suspense fallback={null}>
