@@ -17,7 +17,7 @@ import {Suspense} from 'react';
 
 export default function Index() {
   const {countryCode = 'US'} = useSession();
-
+  console.log('hello world!');
   return (
     <Layout hero={<GradientBackground />}>
       <Suspense fallback={null}>
